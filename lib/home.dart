@@ -10,6 +10,12 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [Image.asset("assets/single-product-1-cover-2.jpg")],
+        ),
+      ),
+    );
   }
 }
